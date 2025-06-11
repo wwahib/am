@@ -1,0 +1,410 @@
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+
+.about-section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 3rem 1rem;
+    }
+
+.about-heading {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #1f2937;
+      margin-bottom: 1rem;
+    }
+
+.about-text {
+      font-size: 1.1rem;
+      color: #1f2937;
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+
+.images-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+.images-row img {
+      max-width: 100%;
+      height: auto;
+    }
+
+.left-img {
+      flex: 2;
+      min-width: 300px;
+    }
+
+.right-img {
+      flex: 1;
+      min-width: 200px;
+      align-self: center;
+    }
+
+@media (max-width: 768px) {
+      .images-row {
+        flex-direction: column;
+        align-items: center;
+      }
+
+.right-img {
+        align-self: center;
+      }
+    }
+
+/* Section 1 */
+/* Main offer section */
+.offer-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 80px 100px;
+  background-color: #0a0a0a;
+  position: relative;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+/* Text block */
+.offer-text {
+  flex: 1;
+  color: white;
+  z-index: 2;
+  max-width: 600px;
+}
+
+.offer-text h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.offer-text h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.offer-text p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Image block */
+.offer-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 2;
+}
+
+.offer-image img {
+  width: 90%;
+  max-width: 400px;
+  height: 280px; /* Reduced height */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Background text */
+.background-text {
+  position: absolute;
+  left: 100px;
+  bottom: 40px;
+  font-size: 72px;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.04);
+  z-index: 1;
+  line-height: 1;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+/* Section 2 Styling: Weekly Growth Analysis */
+.offer-section2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 100px;
+  background-color: #1a1a1a; /* Slightly lighter black for contrast */
+  position: relative;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+/* Text Block */
+.offer-text2 {
+  flex: 1;
+  color: white;
+  z-index: 2;
+  max-width: 600px;
+  padding-left: 50px;
+  padding-bottom: 250px; /*--*/ 
+  order: 2; /* Places text on right */
+}
+
+.offer-text2 h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.offer-text2 p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Image Block */
+.offer-image2 {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  z-index: 2;
+  order: 1; /* Places image on left */
+}
+
+.offer-image2 img {
+  width: 90%;
+  max-width: 500px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Background Text */
+.background-text2 {
+  position: absolute;
+  right: 100px;
+  bottom: 40px;
+  font-size: 72px;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.25); /* Darker overlay text */
+  z-index: 1;
+  line-height: 1.2;
+  pointer-events: none;
+  text-align: right;
+  white-space: nowrap;
+}
+
+/* Section 3 Styling: Strategy, Support & Accountability */
+.offer-section3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 100px;
+  /* background-color: #0a0a0a; consistent black background */
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+/* Text block */
+.offer-text3 {
+  flex: 1;
+  color: white;
+  z-index: 2;
+  max-width: 600px;
+  order: 1; /* Text on left */
+  padding-bottom: 250px;
+}
+
+.offer-text3 h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 16px;
+
+}
+
+.offer-text3 p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Image block */
+.offer-image3 {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 2;
+  order: 2; /* Image on right */
+}
+
+.offer-image3 img {
+  width: 90%;
+  max-width: 500px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Background text */
+.background-text3 {
+  position: absolute;
+  left: 100px;
+  bottom: 40px;
+  font-size: 72px;
+  font-weight: 900; /* Extra bold */
+  color: rgba(0, 0, 0, 0.4); /* Increase opacity for better visibility */
+  z-index: 1;
+  line-height: 1.2;
+  pointer-events: none;
+  white-space: nowrap;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.05); /* Optional subtle lift */
+}
+
+
+
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+body {
+      font-family: Arial, sans-serif;
+    }
+
+.section-container {
+      position: relative;
+      width: 100%;
+      background-color: #ffffff;
+    }
+
+    /* Top Black Background */
+.top-black {
+      background-color: black;
+      height: 150px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Car Image Positioned Half In Black, Half in White */
+.car-image {
+      position: absolute;
+      top: 75px; /* Half of .top-black height */
+      left: 0;
+      width: 200px;
+      z-index: 2;
+    }
+
+    /* Main Content Layout */
+.content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 100px 50px 50px 220px;
+      background-color: white;
+      position: relative;
+      z-index: 1;
+    }
+
+.text-block {
+      width: 50%;
+    }
+
+.text-block h2 {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+
+.text-block p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+.image-block {
+      width: 50%;
+      position: relative;
+      text-align: right;
+    }
+
+.lbsnaa-text {
+      font-size: 60px;
+      font-weight: bold;
+      color: #009FE3;
+      position: absolute;
+      top: 20px;
+      right: 0;
+      z-index: 1;
+    }
+
+.lbsnaa-img {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      max-width: 380px;
+    }
+
+    @media (max-width: 768px) {
+      .content {
+        flex-direction: column;
+        padding: 150px 20px 50px 20px;
+      }
+
+      .text-block,
+      .image-block {
+        width: 100%;
+        text-align: center;
+      }
+
+      .car-image {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 160px;
+      }
+
+      .lbsnaa-text {
+        position: relative;
+        text-align: center;
+        top: 0;
+        right: 0;
+      }
+
+      .lbsnaa-img {
+        margin-top: 10px;
+      }
+    }
+.vision-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 100px;
+  background: linear-gradient(to right, #00a8c6, #004b93);
+  color: white;
+}
+
+.vision-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.vision-text h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.vision-text p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.vision-image {
+  flex: 0 0 auto;
+}
+
+.vision-image img {
+  max-width: 300px;
+  height: auto;
+}

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="./images/Favicon-logo.png">
+  <title>Aspirants' Mentorship</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Swiper CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+  />
+  <link rel="stylesheet" href="style.css?v=3">
+</head>
+
+<body class="font-sans m-0 p-0">
+<!--  Sticky Wrapper for Top Bar + Header -->
+<div class="sticky top-0 z-50">
+  <!--  Top Bar -->
+  <div class="bg-gradient-to-r from-cyan-500 to-blue-700 text-white text-lg py-2 px-4 text-center flex justify-center items-center gap-2">
+    <img src="./images/talktoexpert.png" alt="Phone Icon" class="h-6 w-6 inline-block" />
+    <strong><span>Talk to our experts +91 73555 35615</span></strong>
+  </div>
+
+  <!--  Header/Nav -->
+  <header class="bg-white shadow">
+    <div class="w-full flex items-center justify-between px-6 lg:px-20 py-3">
+      <!-- Logo (Left-side) -->
+       <a href="index.html">
+      <div class="flex-shrink-0">
+        <img src="./images/logo1.png" alt="Logo" class="w-[160px] md:w-[200px]" />
+      </div>
+      </a>
+
+      <!-- Desktop Nav (Right-side) -->
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="index.html" class="text-blue-900 font-medium hover:underline">Home</a>
+        <a href="#about" class="text-gray-700 hover:text-blue-900 hover:underline">About Us</a>
+        <a href="#contact" class="text-gray-700 hover:text-blue-900 hover:underline ">Contact Us</a>
+        <a href="course.html" class="text-gray-700 hover:text-blue-900 hover:underline ">Courses</a>
+        <a href="#freebies" class="text-gray-700 hover:text-blue-900 hover:underline">Freebies</a>
+        <button class="bg-black text-white px-6 py-2 rounded font-semibold hover:shadow-lg">
+          Login
+        </button>
+      </nav>
+
+      <!-- Mobile Hamburger -->
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-blue-700 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu Dropdown -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white px-6 pb-4 shadow">
+      <a href="#home" class="block py-2 text-blue-900 font-medium">Home</a>
+      <a href="#about" class="block py-2 text-gray-700 hover:text-blue-900">About Us</a>
+      <a href="#contact" class="block py-2 text-gray-700 hover:text-blue-900">Contact Us</a>
+      <a href="#courses" class="block py-2 text-gray-700 hover:text-blue-900">Courses</a>
+      <a href="#StudyMaterial" class="block py-2 text-gray-700 hover:text-blue-900">Study Material</a>
+      <button class="mt-2 bg-black text-white px-6 py-2 rounded-full w-full font-semibold hover:shadow-lg">
+        Login
+      </button>
+    </div>
+  </header>
+</div>
+
+
+<!-- Nav bar part FUNction -->
+
+<script>
+  // Toggle mobile menu
+  document.getElementById("menu-btn").addEventListener("click", function () {
+    const menu = document.getElementById("mobile-menu");
+    menu.classList.toggle("hidden");
+  });
+
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute("href"));
+      if (target) {
+        window.scrollTo({
+          top: target.offsetTop - 80, // adjust if your sticky header height changes
+          behavior: "smooth",
+        });
+        document.getElementById("mobile-menu")?.classList.add("hidden"); // close mobile menu after click
+      }
+    });
+  });
+</script>
+
+<section class="about-section" id="about">
+    <h2 class="about-heading">About Us</h2>
+    <p class="about-text">
+      Welcome to your personalized UPSC mentorship journey. We believe that every aspirant has unique strengths and challenges—and that one-on-one mentorship is the key to unlocking your highest potential.
+    </p>
+    <p class="about-text">
+      At our core, we offer individualized guidance tailored specifically to your UPSC preparation. No generic plans. No one-size-fits-all strategies. Just focused, personal mentorship that evolves with your progress.
+    </p>
+
+    <div class="images-row">
+      <div class="left-img">
+        <img src="./images/about/office.PNG" alt="Mentorship Group" />
+      </div>
+      <div class="right-img">
+        <img src="./images/about/askoh.PNG" alt="Ashoka Pillar" />
+      </div>
+    </div>
+  </section>
+
+<!-- Section 1: Personalised Mentorship -->
+
+<section class="offer-section">
+  <div class="offer-text">
+    <h2>What We Offer</h2>
+    <h3>Personalised Mentorship</h3>
+    <p>
+      You are matched with an experienced mentor who understands your goals, background, and preparation level. Whether you’re just beginning or fine-tuning your optional, our mentors walk with you—every step of the way.
+    </p>
+  </div>
+  <div class="offer-image">
+    <img src="./images/about/1.jpg" alt="Mentorship" />
+  </div>
+  <div class="background-text">Personalised Mentorship</div>
+</section>
+
+
+<!-- Section 2: Weekly Growth Analysis -->
+<section class="offer-section2">
+  <div class="offer-text2">
+    <h3>Weekly Growth Analysis</h3>
+    <p>
+      Consistent improvement is non-negotiable. Our structured weekly assessments track your progress, identify gaps, and recalibrate your strategy in real-time. Expect detailed feedback, performance metrics, and clear next steps each week.
+    </p>
+  </div>
+  <div class="offer-image2">
+    <img src="./images/about/2.jpg "alt="Growth Analysis" />
+  </div>
+  <div class="background-text2">Weekly Growth<br />Analysis</div>
+</section>
+
+
+
+<!-- Section 3: Strategy, Support & Accountability -->
+<section class="offer-section3">
+  <div class="offer-text3">
+    <h3>Strategy, Support & Accountability</h3>
+    <p>
+      From crafting a dynamic study plan to answering late-night doubts, your mentor ensures you stay focused, motivated, and on track.
+    </p>
+  </div>
+  <div class="offer-image3">
+    <img src="./images/about/3.jpg" alt="Strategy Support" />
+  </div>
+  <div class="background-text3">Strategy,<br />Support &<br />Accountability</div>
+</section>
+
+
+
+<!-- Top Section -->
+  
+  <div class="section-container">
+    <!-- Black Background Bar -->
+    <div class="top-black"></div>
+
+    <!-- Car Overlapping Half Black / Half White -->
+    <img src="./images/about/car.png" alt="Car" class="car-image" style="width: auto; max-height: 20%;"/>
+
+    <!-- Main Flex Content -->
+    <div class="content">
+      <div class="text-block">
+        <h2 style="color: black;"><strong>Why Choose Us?</strong></h2>
+        <p>Because this journey is too important to navigate alone.</p>
+        <p>At aspirants mentorship we believe that the right mentorship can be the defining factor in your UPSC success. Our personalized one-on-one mentorship program is built to bring structure, clarity, and momentum to your preparation.</p>
+        <p>Through weekly performance analysis, customized study plans, and continuous accountability, we don’t just guide you—we partner with you. Our mentors provide strategic insight, resolve doubts promptly, and help you build the discipline needed to stay consistent and focused.</p>
+        <p>Every aspect of your preparation is closely monitored and optimized—ensuring that your time and effort consistently translate into measurable progress and real results.</p>
+      </div>
+
+      <div class="image-block">
+        <!-- <div class="lbsnaa-text">LBSNAA</div> -->
+        <img src="./images/lbsnaa.PNG" alt="LBSNAA Building" class="lbsnaa-img" style="max-width: 100%; height: auto;" />
+      </div>
+    </div>
+  </div>
+  
+<!-- Vision Section -->
+<section class="vision-section">
+  <div class="vision-text">
+    <h2>Our Vision</h2>
+    <p>
+      To build India’s most trusted aspirants mentorship platform—where personalized guidance, consistent growth tracking, and focused accountability empower every aspirant to reach their fullest potential.
+    </p>
+  </div>
+  <div class="vision-image">
+    <img src="./images/about/eye-icon-removebg-preview.png" alt="Eye Icon" />
+  </div>
+</section>
+
+<!-- Get in Touch Section -->
+<section class="bg-black text-white py-16" id="contact">
+  <div class="max-w-7xl mx-auto px-4 md:px-8 flex flex-col md:flex-row gap-12 items-start rounded-lg p-6">
+
+    <!-- LEFT: Get in Touch Info -->
+    <div class="md:w-1/2 space-y-6">
+      <h2 class="text-3xl font-bold">Get in touch</h2>
+      <p class="text-white text-lg">
+        Let's Connect and Empower Your Journey
+at aspirant's mentorship, we're dedicated to guiding you towards your aspirations. Whether you're seeking mentorship, have questions, or wish to provide feedback, we're here to assist you every step of the way.</p>
+
+      <!-- Phone -->
+      <div class="flex items-center gap-3">
+      <img src="./images/talktoexpert.png" alt="Phone Icon" class="h-6 w-6 inline-block" />
+        <span class="text-lg font-medium">735553 5615</span>
+      </div>
+
+      <!-- Email -->
+      <div class="flex items-center gap-3">
+        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18c0 1.1.89 2 2 2h16a2 2 0 0 0 2-2V6c0-1.1-.9-2-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z"/>
+        </svg>
+        <span class="text-lg font-medium">admissions@aspirantsmentorship.com</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: Contact Us Form -->
+    <div class="md:w-1/2 w-full">
+      <div class="border border-white p-6 rounded-lg">
+        <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
+        <form id="contactForm" class="space-y-4" method="POST" action="submit_contact.php">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name"
+            required
+            class="w-full bg-[#0e0e0e] text-white border border-cyan-500 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-cyan-600"
+          />
+          <input
+            type="text"
+            name="phone"
+            id="phone"
+            placeholder="Phone No."
+            required
+            class="w-full bg-[#0e0e0e] text-white border border-cyan-500 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-cyan-600"
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            required
+            class="w-full bg-[#0e0e0e] text-white border border-cyan-500 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-cyan-600"
+          />
+
+          <!-- OTP input: hidden initially -->
+          <input
+            type="text"
+            name="otp"
+            id="otp"
+            placeholder="Enter OTP"
+            class="w-full bg-[#0e0e0e] text-white border border-cyan-500 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-cyan-600 hidden"
+          />
+
+          <!-- Buttons -->
+          <div class="flex flex-col sm:flex-row gap-4">
+            <button
+              type="button"
+              id="getOtpBtn"
+              class="bg-gradient-to-r from-cyan-500 to-blue-700 text-white font-semibold px-4 py-2 rounded-md"
+            >
+              Get OTP
+            </button>
+
+            <button
+              type="submit"
+              id="submitBtn"
+              class="bg-gradient-to-r from-cyan-500 to-blue-700 text-white font-semibold px-4 py-2 rounded-md"
+              disabled
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+        <p id="message" class="mt-2 text-white"></p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<script>
+  const getOtpBtn = document.getElementById('getOtpBtn');
+  const submitBtn = document.getElementById('submitBtn');
+  const otpInput = document.getElementById('otp');
+  const message = document.getElementById('message');
+  const form = document.getElementById('contactForm');
+
+  getOtpBtn.addEventListener('click', () => {
+    const name = document.getElementById('name').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const email = document.getElementById('email').value.trim();
+
+    if (!name || !phone || !email) {
+      message.textContent = "Please fill in Name, Phone, and Email before requesting OTP.";
+      return;
+    }
+
+    message.textContent = "Sending OTP...";
+    fetch('send_otp.php', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({ name, phone, email })
+    })
+    .then(res => res.json())
+    .then(data => {
+      if (data.success) {
+        message.textContent = "OTP sent to your email. Please check and enter it below.";
+        otpInput.classList.remove('hidden');
+        submitBtn.disabled = false;
+        getOtpBtn.disabled = true;
+      } else {
+        message.textContent = "Error: " + data.message;
+      }
+    })
+    .catch(() => {
+      message.textContent = "Something went wrong while sending OTP.";
+    });
+  });
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    message.textContent = "Verifying OTP and submitting data...";
+
+    fetch('submit_contact.php', {
+      method: 'POST',
+      body: formData
+    })
+    .then(res => res.json())
+    .then(data => {
+      if (data.success) {
+        message.textContent = "Thank you! Your info has been submitted.";
+        form.reset();
+        otpInput.classList.add('hidden');
+        submitBtn.disabled = true;
+        getOtpBtn.disabled = false;
+      } else {
+        message.textContent = "Error: " + data.message;
+      }
+    })
+    .catch(() => {
+      message.textContent = "Submission failed. Try again.";
+    });
+  });
+</script>
+
+  
+</body>
+</html>
+
